@@ -4,7 +4,7 @@ from fastapi.responses import RedirectResponse
 from pydantic import BaseModel
 
 from scraping.similarity_search import SimilaritySearch
-from scraping.selenium_scraper import SeleniumScraper
+from scraping.web_scraper import WebScraper
 
 from fastapi.openapi.docs import get_swagger_ui_html
 from fastapi import Depends, FastAPI, HTTPException, status
@@ -66,7 +66,7 @@ def get_docs(credentials: HTTPBasicCredentials = Depends(security)):
 def scrape_and_store(scrape_request: ScrapeRequest):
     api_key = uuid.uuid4()
     try:
-        SeleniumScraper(
+        WebScraper(
             scrape_request.url, api_key
         ).scrape()
         return api_key
@@ -89,7 +89,7 @@ def query_content(query_request: QueryRequest):
 def sample(sample_request: SampleRequest):
     api_key = uuid.uuid4()
     try:
-        SeleniumScraper(
+        WebScraper(
             sample_request.url, api_key
         ).scrape_sample()
         return api_key

@@ -9,8 +9,9 @@ class TextProcessor(BaseProcessor):
         self.text_file = os.path.join(output_folder, f"{api_key}_text.txt")
 
     def process(self, soup: BeautifulSoup):
-        content = soup.get_text()
-        content = content.replace("\u200e", "").replace("\n", "")
+        # content = soup.get_text()
+        content = soup
+        # content = content.replace("\u200e", "").replace("\n", "")
 
         # store the text in the file
         self._store_text(content)

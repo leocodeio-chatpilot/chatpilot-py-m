@@ -3,6 +3,7 @@
 1. Create an empty folder `.venv` in the root folder (chatpilot)
 2. Run:
    ```
+   source .venv/bin/activate
    mkdir .venv
    poetry install
    poetry shell
