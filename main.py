@@ -48,7 +48,7 @@ security = HTTPBasic()
 
 def authenticate_user(credentials: HTTPBasicCredentials):
     correct_username = "admin"
-    correct_password = "password"
+    correct_password = "admin"
     if credentials.username != correct_username or credentials.password != correct_password:
         raise HTTPException(
             status_code=status.HTTP_401_UNAUTHORIZED,

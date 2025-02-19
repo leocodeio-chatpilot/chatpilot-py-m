@@ -1,9 +1,9 @@
 from core.database import ChromaDBManager
-from config.gemini_config import GeminiConfig
+from models.gemini import GeminiModel
 
 class SimilaritySearch:
     def __init__(self):
-        self.model = GeminiConfig.initialize()
+        self.model = GeminiModel.initialize()
         self.db_manager = ChromaDBManager()
     
     def query(self, query_text: str, api_key: str) -> str:
