@@ -3,10 +3,12 @@
 1. Create an empty folder `.venv` in the root folder (chatpilot)
 2. Run:
    ```
+   sudo apt install pyenv
+   pyenv install 3.12
+   pyenv global 3.12
+   python -m venv .venv
    source .venv/bin/activate
-   mkdir .venv
-   poetry install
-   poetry shell
+   pip install -r requirements.txt
    ```
 3. Set up GEMIpNI_API_KEY in the .env file
    ```
