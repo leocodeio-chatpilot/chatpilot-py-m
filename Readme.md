@@ -1,5 +1,6 @@
 ## how to run the app
 
+
 1. Create an empty folder `.venv` in the root folder (chatpilot)
 2. Run:
    ```
