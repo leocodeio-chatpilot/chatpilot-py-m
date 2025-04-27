@@ -62,7 +62,7 @@ def get_docs(credentials: HTTPBasicCredentials = Depends(security)):
     return get_swagger_ui_html(openapi_url="/openapi.json", title="docs")
 
 
-@app.post("/scrape/")
+@app.post("/complete/")
 def scrape_and_store(scrape_request: ScrapeRequest):
     api_key = uuid.uuid4()
     try:
