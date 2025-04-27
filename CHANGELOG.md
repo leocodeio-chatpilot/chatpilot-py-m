@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/leocodeio-chatpilot/chatpilot-py-m/compare/v1.1.1...v1.1.2) (2025-04-27)
+
+
+### Performance Improvements
+
+* **revisit :** revisit ([09eb14a](https://github.com/leocodeio-chatpilot/chatpilot-py-m/commit/09eb14a6598193bc9fa60cd0e600af0902a5ace4))
+
 ## [1.1.1](https://github.com/leocodeio-chatpilot/chatpilot-py-m/compare/v1.1.0...v1.1.1) (2025-03-29)
 
 
