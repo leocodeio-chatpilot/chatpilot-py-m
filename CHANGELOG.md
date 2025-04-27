@@ -1,3 +1,10 @@
+## [1.1.4](https://github.com/leocodeio-chatpilot/chatpilot-py-m/compare/v1.1.3...v1.1.4) (2025-04-27)
+
+
+### Performance Improvements
+
+* **docker file:** docker file ([a192dc3](https://github.com/leocodeio-chatpilot/chatpilot-py-m/commit/a192dc30da6808468f9c154ef8240b76ba616ec6))
+
 ## [1.1.3](https://github.com/leocodeio-chatpilot/chatpilot-py-m/compare/v1.1.2...v1.1.3) (2025-04-27)
 
 
